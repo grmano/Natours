@@ -1,0 +1,7 @@
+@function element-grid-width($columns, $totalColumns) {
+  // @return calc(#{$columns} * ((100% - (#{$totalColumns} - 1) * $gutter-horizontal / $totalColumns) + (#{$columns} - 1 ) * $gutter-horizontal))
+  $columnSize: (100% - (#{$gutter-horizontal} * (#{$totalColumns - 1})));
+
+  $gutterSize: (#{$columns} * #{$gutter-horizontal}) - (1 * #{$gutter-horizontal});
+  @return calc((#{$columns} * (#{$columnSize})/#{$totalColumns}) + (#{$gutterSize}))
+}
