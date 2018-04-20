@@ -36,3 +36,23 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+.heading-secundary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $color-primary, $color-primary-dark);
+  display: inline-block;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all .2;
+
+  &:hover {
+    transform: skewY(10deg);
+    transform: skewX(-10deg);
+    text-shadow: 0 1rem 2rem rgba($color-black,.2);
+  }
+}
