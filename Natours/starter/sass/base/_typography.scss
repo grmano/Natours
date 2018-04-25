@@ -55,3 +55,12 @@ body {
     text-shadow: 0 1rem 2rem rgba($color-black,.2);
   }
 }
+
+.heading-tertiary {
+  color: $color-grey-dark;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px;
+}

@@ -1,20 +1,13 @@
 .section-about {
   background-color: $color-grey-light;
-  padding: 25rem 0;
+  padding: 30rem 0;
   margin-top: -20vh;
 
-  &__row  {
-    margin: 5rem auto;
-    @include clearfix;
+  .paragraph {
+    font-size: 1.6rem;
 
-
-    &__col-1-of-2 {
-      float: left;
-      width: element-grid-width(1, 2);
-
-      &:not(:last-child) {
-        margin-right: $gutter-horizontal;
-      }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
     }
   }
 }
