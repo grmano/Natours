@@ -26,7 +26,7 @@
 
   &--white{
     background-color: $color-white;
-    color: #777;
+    color: $color-grey-dark;
 
     &::after {
     background-color: $color-white;
@@ -53,4 +53,32 @@
     animation-fill-mode: backwards;
   }
 
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.4s;
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+
+    border-bottom: 1px solid $color-primary;
+  }
+
+  &--green {
+    color: $color-primary; 
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem rgba($color-black, .15);
+  }
 }
